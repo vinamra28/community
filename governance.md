@@ -18,7 +18,7 @@ Andrew Bayer      | CloudBees | [abayer](https://github.com/abayer)         | [@
 Vincent Deemester | Red Hat   | [vdemeester](https://github.com/vdemeester) | [@vdemeester](https://tektoncd.slack.com/team/UHSQGV1L3)      | Bootstrap Committee | Feb 2021
 Christie Wilson   | Google    | [bobcatfish](https://github.com/bobcatfish)   | [@Christie Wilson](https://tektoncd.slack.com/team/UJ6DECY78) | Bootstrap Committee | Feb 2021
 Andrea Frittoli   | IBM       | [afrittoli](https://github.com/afrittoli)   | [@Andrea Frittoli](https://tektoncd.slack.com/team/UJ411P2CC) | Feb 2020 | Feb 2022
-Jason Hall        | Google    | [ImJasonH](https://github.com/ImJasonH)     | [@Jason Hall](https://tektoncd.slack.com/team/UJ3MCRRRA)      | Feb 2020 | Feb 2022
+Jason Hall        | Red Hat   | [ImJasonH](https://github.com/ImJasonH)     | [@Jason Hall](https://tektoncd.slack.com/team/UJ3MCRRRA)      | Feb 2020 | Feb 2022
 
 There is no designated facilitator at the moment, the responsibility is
 distributed across the five members of the committee.
@@ -70,7 +70,7 @@ activities:
 * The [Tekton Mission and Vision](roadmap.md)
 * Select [election officers](#election-officers) to run elections
 
-It defines the processes around [TEPs](https://github.com/tektoncd/community/tree/master/teps).
+It defines the processes around [TEPs](https://github.com/tektoncd/community/tree/main/teps).
 Should the community fail to reach consensus on whether to accept a proposed
 TEP or not, the governance committee can help to break the impasse.
 
@@ -163,4 +163,4 @@ Members of the governing board will be given access to these resources:
 * [The GCP projects used by boskos](https://github.com/tektoncd/plumbing/blob/main/boskos/boskos-config.yaml)
   which are used to test against
 
-They have the permissions added through a [script](https://github.com/tektoncd/plumbing/blob/main/addpermissions.py).
+They have the permissions added through a [script](https://github.com/tektoncd/plumbing/blob/main/adjustpermissions.py).

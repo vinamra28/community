@@ -6,9 +6,9 @@ The purpose of this doc is to:
 * Establish a baseline for reviewers so they know at a minimum what to look for
 
 Design: Most designs should be first proposed via an issue and possibly a
-[TEP](https://github.com/tektoncd/community/tree/master/teps#tekton-enhancement-proposals-teps).
+[TEP](https://github.com/tektoncd/community/tree/main/teps#tekton-enhancement-proposals-teps).
 API changes should be evaluated according to
-[Tekton Design Principles](https://github.com/tektoncd/community/blob/master/design-principles.md).
+[Tekton Design Principles](https://github.com/tektoncd/community/blob/main/design-principles.md).
 
 Each Pull Request is expected to meet the following expectations around:
 
@@ -21,7 +21,7 @@ Each Pull Request is expected to meet the following expectations around:
   * [Tests](#tests)
   * [Reconciler/Controller Changes](#reconcilercontroller-changes)
 
-_See also [the Tekton review process](https://github.com/tektoncd/community/blob/master/process.md#reviews)._
+_See also [the Tekton review process](https://github.com/tektoncd/community/blob/main/process.md#reviews)._
 
 ## Pull request description
 
@@ -58,8 +58,8 @@ _See also [the Tekton review process](https://github.com/tektoncd/community/blob
 * Include Markdown doc updates for user visible features
 * Spelling and grammar should be correct
 * Try to make formatting look as good as possible (use preview mode to check)
-* Follow [content](https://github.com/tektoncd/website/blob/master/content/en/doc-con-content.md)
-  and [formatting](https://github.com/tektoncd/website/blob/master/content/en/doc-con-formatting.md) guidelines
+* Follow [content](https://github.com/tektoncd/website/blob/main/content/en/doc-con-content.md)
+  and [formatting](https://github.com/tektoncd/website/blob/main/content/en/doc-con-formatting.md) guidelines
 * Should explain thoroughly how the new feature works
 * If possible, in addition to code snippets, include a reference to an end to end example
 * Ensure that all links and references are valid
@@ -117,7 +117,7 @@ _See also [the Tekton review process](https://github.com/tektoncd/community/blob
       it would make sense to move the test into another package and export it
 * Test code
   * When using cmp.Diff the argument order is always (want, got) and in the error message include (-want +got)
-    (and/or use a lib like [PrintWantGot](https://github.com/tektoncd/pipeline/blob/master/test/diff/print.go))
+    (and/or use a lib like [PrintWantGot](https://github.com/tektoncd/pipeline/blob/main/test/diff/print.go))
   * Table driven tests: do not use the same test for success and fail cases if the logic is different
     (e.g. do not have two sets of test logic, gated with `wantErr`)
 

@@ -79,7 +79,7 @@ if need be and bring it up.
 
 ## Motivation
 
-As noted at the top of the [Tekton Pipelines README.md](https://github.com/tektoncd/pipeline/blob/master/README.md),
+As noted at the top of the [Tekton Pipelines README.md](https://github.com/tektoncd/pipeline/blob/main/README.md),
 the first of its main, high level, advantages is that Tekton is Cloud Native, implemented as Kubernetes, and thus
 inherently has the ability to integrate into key Kubernetes facilities around:
 
@@ -167,13 +167,13 @@ there are sufficient third party solutions we can work with in order to meet tho
 
 ## Proposal
 
-We augment documentation, much like what exists [for Authentication](https://github.com/tektoncd/pipeline/blob/master/docs/auth.md)
+We augment documentation, much like what exists [for Authentication](https://github.com/tektoncd/pipeline/blob/main/docs/auth.md)
 for the other typical security concerns.  Here is a current sampling of scenarios, where of course this is a moment in time snapshot,
 and perhaps not even a complete one at that (we can grow documentation iteratively of course):
 
 ### Pod Security Policy (PSP)
 
-Providing some concise background / and or details on why [the current Pod Security Policy](https://github.com/tektoncd/pipeline/blob/master/config/101-podsecuritypolicy.yaml)
+Providing some concise background / and or details on why [the current Pod Security Policy](https://github.com/tektoncd/pipeline/blob/main/config/101-podsecuritypolicy.yaml)
 has what it has could prove helpful to new users.
 
 Perhaps mine the PRs associated with the history of changes.  Avoid simply repeating k8s documentation for the fields.
@@ -483,8 +483,8 @@ Namespace has sufficient permissions via Kubernetes RBAC to access the `ClusterT
 As mentioned in the Summary, [this Tekton Triggers issue](https://github.com/tektoncd/triggers/issues/610) is the 
 source for raising this scenario here, and has a bunch of good detailed discussion.
 
-In that issue, an approach using the [Tekton Trigger (Custom) Webhook Interceptor](https://github.com/tektoncd/triggers/blob/master/docs/eventlisteners.md#webhook-interceptors)
-could serve as the means to engage with [OPA's support for validating JWT Token (e.g OpenID Connect)](https://github.com/tektoncd/triggers/blob/master/docs/eventlisteners.md#webhook-interceptors)
+In that issue, an approach using the [Tekton Trigger (Custom) Webhook Interceptor](https://github.com/tektoncd/triggers/blob/main/docs/eventlisteners.md#webhook-interceptors)
+could serve as the means to engage with [OPA's support for validating JWT Token (e.g OpenID Connect)](https://github.com/tektoncd/triggers/blob/main/docs/eventlisteners.md#webhook-interceptors)
 to validate whether the user's tokens in incoming HTTP payload can access the referenced Trigger and the Task/TaskRuns etc.
 the Trigger can initiate.
 

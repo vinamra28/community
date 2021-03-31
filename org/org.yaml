@@ -34,6 +34,7 @@ orgs:
     - barthy1
     - bigkevmcd
     - briandealwis
+    - briangleeson
     - caniszczyk
     - carlos-logro
     - chanseokoh
@@ -49,6 +50,7 @@ orgs:
     - dwnusbaum
     - eddycharly
     - ekcasey
+    - fenglixa
     - fhopfensperger
     - font
     - gabemontero
@@ -65,6 +67,7 @@ orgs:
     - jjasghar
     - jkutner
     - jlpettersson
+    - jmcshane
     - jonjohnsonjr
     - joseblas
     - jromero
@@ -97,8 +100,10 @@ orgs:
     - psschwei
     - raffamendes
     - rhuss
+    - rudeigerc
     - rupalibehera
     - savitaashture
+    - sbose78
     - sbwsg
     - sclevine
     - sergetron
@@ -124,6 +129,7 @@ orgs:
     - yaoxiaoqi
     - ywluogg
     - yuege01
+    - zhangtbj
     - ziheng
     teams:
       catalog.maintainers:
@@ -294,6 +300,7 @@ orgs:
         - wlynch
         - ImJasonH
         - XinruZhang
+        - sbwsg
         privacy: closed
         repos:
           results: read
@@ -451,6 +458,7 @@ orgs:
         - Megan-Wright
         - carlos-logro
         - AlanGreene
+        - briangleeson
         - ncskier
         - CarolynMabbott
         - dibbles
@@ -570,6 +578,7 @@ orgs:
         - garethr
         - vincent-pli
         - bobcatfish
+        - spikeburton
         privacy: closed
         repos:
           catalog: read
@@ -597,6 +606,7 @@ orgs:
         - afrittoli
         - gabemontero
         - marcelmue
+        - jmcshane
         privacy: closed
         repos:
           triggers: read
@@ -673,3 +683,14 @@ orgs:
         privacy: closed
         repos:
           chains: read
+      docs.reviewers:
+        description: Doc reviewers across repos
+        maintainers:
+        - abayer
+        - afrittoli
+        - bobcatfish
+        - dibyom
+        - vdemeester
+        members:
+        - sergetron
+        privacy: closed

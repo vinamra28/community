@@ -33,7 +33,7 @@ resources makes it simple (and less verbose) to express workflows in Tekton.
 This is especially true for simple use cases, examples, and documentation where
 reusability is less of a concern. For instance, Task specs can be embedded
 inside TaskRuns (see the
-[examples](https://github.com/tektoncd/pipeline/tree/master/examples/v1beta1/taskruns)).
+[examples](https://github.com/tektoncd/pipeline/tree/main/examples/v1beta1/taskruns)).
 
 Within a Trigger, at the moment, only `bindings` can be embedded while Templates
 always have to be referenced. Allowing embedded templates will make it easier
@@ -76,7 +76,7 @@ There are two changes proposed to the Trigger spec:
 2. Deprecate the `name` field for reffering to TriggerTemplate objects in favor
    of a new `ref` field. This is for consistency as we use usually use `ref` to
    refer to other resources (see `bindings` as an
-   [example](https://github.com/tektoncd/community/blob/master/teps/0016-concise-trigger-bindings.md#proposal)).
+   [example](https://github.com/tektoncd/community/blob/main/teps/0016-concise-trigger-bindings.md#proposal)).
    Example:
    ```yaml
    # DEPRECATED
@@ -104,4 +104,4 @@ compatible:
 
 1. GitHub issue: https://github.com/tektoncd/triggers/issues/616
 
-1. Embedded Bindings: https://github.com/tektoncd/community/blob/master/teps/0016-concise-trigger-bindings.md
+1. Embedded Bindings: https://github.com/tektoncd/community/blob/main/teps/0016-concise-trigger-bindings.md

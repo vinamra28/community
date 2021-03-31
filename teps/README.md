@@ -34,7 +34,7 @@ following:
 
 into one file which is created incrementally in collaboration with one
 or more [Working
-Groups](https://github.com/tektoncd/community/blob/master/working-groups.md)
+Groups](https://github.com/tektoncd/community/blob/main/working-groups.md)
 (WGs).
 
 This process does not block authors from doing early design docs using
@@ -97,6 +97,24 @@ TEP should be approved by ***at least two owners*** from different
 company. This should prevent a company to *force push* a TEP (and
 thus a feature) in the tektoncd projects.
 
+### TEP Review SLOs
+
+1. After a TEP PR has been created, in
+   [the next API working group meeting](https://github.com/tektoncd/community/blob/main/working-groups.md#api),
+   we will try to find 2 qualified assignees to review (from 2 different companies as described above) and will
+   [assign](https://docs.github.com/en/github/managing-your-work-on-github/assigning-issues-and-pull-requests-to-other-github-users)
+   them to the PR.
+   * If we cannot find 2 reviewers in the meeting, someone in the meeting will be take the action to find reviewers
+     offline (e.g. over [slack](https://github.com/tektoncd/community/blob/main/contact.md#slack) or
+     [tekton-dev](https://github.com/tektoncd/community/blob/main/contact.md#mailing-list)).
+2. Once reviewers have been assigned, they should give initial feedback on the PR by
+   [the next API working group meeting](https://github.com/tektoncd/community/blob/main/working-groups.md#api)
+   at the latest.
+
+_Why don't we use GitHub reviewers instead of assignees? If we want to do that we need to turn off Prow's auto
+assignment of reviewers; there is no guarantee the auto assigned reviewers are the appropriate reviewers.
+See [discussion](https://github.com/tektoncd/community/discussions/362)._
+
 ### Solving TEP number conflicts
 
 The TEP PR might fail CI if a TEP number conflict is detected, or if
@@ -119,7 +137,7 @@ This is the complete list of Tekton teps:
 |------|--------|----------|---------------|
 |[TEP-0001](0001-tekton-enhancement-proposal-process.md) | Tekton Enhancement Proposal Process | implemented | 2020-06-11 |
 |[TEP-0002](0002-custom-tasks.md) | Custom Tasks | implementable | 2020-07-07 |
-|[TEP-0003](0003-tekton-catalog-organization.md) | Tekton Catalog Organization | implementable | 2020-08-12 |
+|[TEP-0003](0003-tekton-catalog-organization.md) | Tekton Catalog Organization | implemented | 2021-02-09 |
 |[TEP-0004](0004-task-results-in-final-tasks.md) | Task Results in Final Tasks | implementable | 2020-11-10 |
 |[TEP-0005](0005-tekton-oci-bundles.md) | Tekton OCI Bundles | implementable | 2020-08-13 |
 |[TEP-0006](0006-tekton-metrics.md) | Tekton Metrics | proposed | 2020-07-13 |
@@ -143,10 +161,21 @@ This is the complete list of Tekton teps:
 |[TEP-0028](0028-task-execution-status-at-runtime.md) | task-exec-status-at-runtime | implementable | 2020-11-02 |
 |[TEP-0029](0029-step-workspaces.md) | step-and-sidecar-workspaces | implementable | 2020-10-02 |
 |[TEP-0030](0030-workspace-paths.md) | workspace-paths | proposed | 2020-10-18 |
-|[TEP-0031](0031-tekton-bundles-cli.md) | tekton-bundles-cli | implementable | 2020-12-07 |
+|[TEP-0031](0031-tekton-bundles-cli.md) | tekton-bundles-cli | implemented | 2021-03-26 |
 |[TEP-0032](0032-tekton-notifications.md) | Tekton Notifications | proposed | 2020-11-18 |
+|[TEP-0033](0033-tekton-feature-gates.md) | Tekton Feature Gates | implementable | 2021-03-23 |
 |[TEP-0035](0035-document-tekton-position-around-policy-authentication-authorization.md) | document-tekton-position-around-policy-authentication-authorization | implementable | 2020-12-09 |
 |[TEP-0036](0036-start-measuring-tekton-pipelines-performance.md) | Start Measuring Tekton Pipelines Performance | proposed | 2020-11-20 |
 |[TEP-0037](0037-remove-gcs-fetcher.md) | Remove `gcs-fetcher` image | implementing | 2021-01-27 |
 |[TEP-0039](0039-add-variable-retries-and-retrycount.md) | Add Variable `retries` and `retry-count` | proposed | 2021-01-31 |
+|[TEP-0040](0040-ignore-step-errors.md) | Ignore Step Errors | proposed | 2021-02-04 |
+|[TEP-0041](0041-tekton-component-versioning.md) | Tekton Component Versioning | proposed | 2021-02-01 |
+|[TEP-0042](0042-taskrun-breakpoint-on-failure.md) | taskrun-breakpoint-on-failure | proposed | 2021-03-21 |
+|[TEP-0044](0044-decouple-task-composition-from-scheduling.md) | Decouple Task Composition from Scheduling | proposed | 2021-03-10 |
 |[TEP-0045](0045-whenexpressions-in-finally-tasks.md) | WhenExpressions in Finally Tasks | implementable | 2021-01-28 |
+|[TEP-0047](0047-pipeline-task-display-name.md) | Pipeline Task Display Name | proposed | 2021-02-10 |
+|[TEP-0050](0050-ignore-task-failures.md) | Ignore Task Failures | proposed | 2021-02-19 |
+|[TEP-0051](0051-ppc64le-architecture-support.md) | ppc64le Support | proposed | 2021-01-28 |
+|[TEP-0052](0052-tekton-results-automated-run-resource-cleanup.md) | Tekton Results: Automated Run Resource Cleanup | implementable | 2021-03-22 |
+|[TEP-0053](0053-nested-triggers.md) | Nested Triggers | proposed | 2021-02-24 |
+|[TEP-0058](0058-graceful-pipeline-run-termination.md) | Graceful Pipeline Run Termination | proposed | 2021-03-18 |
